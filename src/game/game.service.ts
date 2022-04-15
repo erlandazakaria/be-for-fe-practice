@@ -1,21 +1,20 @@
 import { Injectable } from '@nestjs/common';
-
 import Data from '../lib/data.lib';
 import BaseService from '../lib/service.lib';
-import { CreateMovieDto } from './dto/create-movie.dto';
-import { UpdateMovieDto } from './dto/update-movie.dto';
+import { CreateGameDto } from './dto/create-game.dto';
+import { UpdateGameDto } from './dto/update-game.dto';
 
 @Injectable()
-export class MovieService extends BaseService {
+export class GameService extends BaseService {
   private data: Data;
 
   constructor() { 
     super(); 
-    this.data = new Data("movie");
+    this.data = new Data("game");
   }
 
-  async create(createMovieDto: CreateMovieDto) {
-    const result = this.data.addOne({...createMovieDto, rating: +createMovieDto.rating});
+  async create(createGameDto: CreateGameDto) {
+    const result = this.data.addOne({...createGameDto, rating: +createGameDto.rating});
     return result ? this.response.success() : this.response.badRequest();
   }
 
@@ -29,8 +28,8 @@ export class MovieService extends BaseService {
     return result ? this.response.successWithData(result) : this.response.badRequest();
   }
 
-  async update(id: number, updateMovieDto: UpdateMovieDto) {
-    const result = this.data.updateOne(+id, updateMovieDto);
+  async update(id: number, updateGameDto: UpdateGameDto) {
+    const result = this.data.updateOne(+id, updateGameDto);
     return result ? this.response.success() : this.response.badRequest();
   }
 

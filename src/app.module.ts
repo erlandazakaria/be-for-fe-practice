@@ -12,6 +12,7 @@ import { UserService } from './user/user.service';
 import { UserController } from './user/user.controller';
 import { MovieModule } from './movie/movie.module';
 import { MovieController } from './movie/movie.controller';
+import { GameModule } from './game/game.module';
 
 @Module({
   imports: [
@@ -25,7 +26,8 @@ import { MovieController } from './movie/movie.controller';
       signOptions: { expiresIn: '2h' },
     }),
     UserModule,
-    MovieModule
+    MovieModule,
+    GameModule
   ],
   controllers: [],
   providers: [UserService],
