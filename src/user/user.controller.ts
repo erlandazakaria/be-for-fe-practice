@@ -1,9 +1,10 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Res } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Res, ValidationPipe } from '@nestjs/common';
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { LoginDto } from './dto/login-user.dto';
 import { ApiTags } from '@nestjs/swagger';
+import { FindUserDto } from './dto/find-movie.dto';
 
 @ApiTags("User API")
 @Controller('api/v1/user')
@@ -35,20 +36,20 @@ export class UserController {
   }
 
   @Get(':id')
-  findOne(@Res() response, @Param('id') id: string) {
-    const result = this.userService.findOne(id);
+  findOne(@Res() response, @Param(new ValidationPipe({transform: true})) params: FindUserDto) {
+    const result = this.userService.findOne(+params.id);
     return response.status(result.code).json(result);
   }
 
   @Patch(':id')
-  async update(@Res() response, @Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-    const result = await this.userService.update(+id, updateUserDto);
+  async update(@Res() response, @Param(new ValidationPipe({transform: true})) params: FindUserDto, @Body() updateUserDto: UpdateUserDto) {
+    const result = await this.userService.update(+params.id, updateUserDto);
     return response.status(result.code).json(result);
   }
 
   @Delete(':id')
-  remove(@Res() response, @Param('id') id: string) {
-    const result = this.userService.remove(+id);
+  remove(@Res() response, @Param(new ValidationPipe({transform: true})) params: FindUserDto) {
+    const result = this.userService.remove(+params.id);
     return response.status(result.code).json(result);
   }
 }

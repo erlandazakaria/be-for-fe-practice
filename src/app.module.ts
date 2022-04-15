@@ -10,6 +10,8 @@ import { UserModule } from './user/user.module';
 import { Auth } from './middlewares/auth.middleware';
 import { UserService } from './user/user.service';
 import { UserController } from './user/user.controller';
+import { MovieModule } from './movie/movie.module';
+import { MovieController } from './movie/movie.controller';
 
 @Module({
   imports: [
@@ -22,7 +24,8 @@ import { UserController } from './user/user.controller';
       secret: process.env.JWT_SECRET,
       signOptions: { expiresIn: '2h' },
     }),
-    UserModule
+    UserModule,
+    MovieModule
   ],
   controllers: [],
   providers: [UserService],
@@ -35,6 +38,6 @@ export class AppModule {
         { path: 'api/v1/user/login', method: RequestMethod.POST },
         { path: 'api/v1/user/register', method: RequestMethod.POST },
       )
-      .forRoutes(UserController)
+      .forRoutes(UserController, MovieController)
   }
 }

@@ -33,16 +33,17 @@ export class UserService extends BaseService {
   }
 
   async register(createUserDto: CreateUserDto) {
-    if(!createUserDto.name) return this.response.error(HttpStatus.BAD_REQUEST, 'Name cant be empty!');
-    if(!createUserDto.email) return this.response.error(HttpStatus.BAD_REQUEST, 'Email cant be empty!');
-    if(!createUserDto.password) return this.response.error(HttpStatus.BAD_REQUEST, 'Password cant be empty!');
+    
+    const findDuplicate = this.data.findByKey("email", createUserDto.email);
+    if(findDuplicate) return this.response.error(HttpStatus.BAD_REQUEST, "Email telah terdaftar");
 
     const salt = await bcrypt.genSalt();
     const hash = await bcrypt.hash(createUserDto.password, salt);
 
     const newUser = new CreateUserDto();
-    newUser.name = createUserDto.name;
-    newUser.email = createUserDto.email;
+    Object.keys(createUserDto).forEach( key => {
+      newUser[key] = createUserDto[key];
+    })
     newUser.password = hash;
 
     const result = this.data.addOne(newUser);
@@ -50,16 +51,16 @@ export class UserService extends BaseService {
   }
 
   async create(createUserDto: CreateUserDto) {
-    if(!createUserDto.name) return this.response.error(HttpStatus.BAD_REQUEST, 'Name cant be empty!');
-    if(!createUserDto.email) return this.response.error(HttpStatus.BAD_REQUEST, 'Email cant be empty!');
-    if(!createUserDto.password) return this.response.error(HttpStatus.BAD_REQUEST, 'Password cant be empty!');
+    const findDuplicate = this.data.findByKey("email", createUserDto.email);
+    if(findDuplicate) return this.response.error(HttpStatus.BAD_REQUEST, "Email telah terdaftar");
 
     const salt = await bcrypt.genSalt();
     const hash = await bcrypt.hash(createUserDto.password, salt);
 
     const newUser = new CreateUserDto();
-    newUser.name = createUserDto.name;
-    newUser.email = createUserDto.email;
+    Object.keys(createUserDto).forEach( key => {
+      newUser[key] = createUserDto[key];
+    })
     newUser.password = hash;
 
     const result = this.data.addOne(newUser);
@@ -71,8 +72,8 @@ export class UserService extends BaseService {
     return result ? this.response.successWithData(result) : this.response.badRequest();
   }
 
-  findOne(id: string) {
-    const result = this.data.getOne(+id);
+  findOne(id: number) {
+    const result = this.data.getOne(id);
     return result ? this.response.successWithData(result) : this.response.badRequest();
   }
 

@@ -1,5 +1,5 @@
 import { JwtService } from '@nestjs/jwt';
-import { Injectable, NestMiddleware } from '@nestjs/common';
+import { HttpStatus, Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
 import { UserService } from '../user/user.service';
 import ServiceResponse from "../lib/serviceResponse.lib";
@@ -23,8 +23,8 @@ export class Auth implements NestMiddleware {
       ) {
         const token = req.headers.authorization.split(' ')[1];
         const decoded = await this.jwt.verify(token);
-        const user = await this.userService.findOne(decoded._id);
-        if (user) {
+        const user = await this.userService.findOne(decoded.id);
+        if (user.code === HttpStatus.OK) {
           req.user = user
           next()
         } else {
