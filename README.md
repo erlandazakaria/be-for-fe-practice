@@ -14,35 +14,8 @@ $ yarn
 $ yarn start
 ```
 
-## Using endpoint
+## All endpoint
 
-# User
-
-Login (POST)
 ```
-localhost:3000/api/v1/user/login
-```
-Register (POST)
-```
-localhost:3000/api/v1/user/register
-```
-Create (POST)
-```
-localhost:3000/api/v1/user/create
-```
-Get All (GET)
-```
-localhost:3000/api/v1/user/
-```
-Get One (GET)
-```
-localhost:3000/api/v1/user/{id}
-```
-Edit One (PATCH)
-```
-localhost:3000/api/v1/user/{id}
-```
-Delete One (DELETE)
-```
-localhost:3000/api/v1/user/{id}
+localhost:8080/api/
 ```

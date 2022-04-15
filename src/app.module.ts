@@ -6,7 +6,6 @@ import { ConfigModule } from '@nestjs/config';
 import { MulterModule } from '@nestjs/platform-express';
 
 import { multerFilter, multerStorage } from './lib/multer.lib';
-import { AppController } from './app.controller';
 import { UserModule } from './user/user.module';
 import { Auth } from './middlewares/auth.middleware';
 import { UserService } from './user/user.service';
@@ -25,7 +24,7 @@ import { UserController } from './user/user.controller';
     }),
     UserModule
   ],
-  controllers: [AppController],
+  controllers: [],
   providers: [UserService],
 })
 export class AppModule {
