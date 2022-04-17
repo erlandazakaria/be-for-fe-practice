@@ -1,1 +1,203 @@
-[]
+[
+    {
+      "id": 1,
+      "name": "The Legend of Zelda: Ocarina of Time",
+      "description": "As a young boy, Link is tricked by Ganondorf, the King of the Gerudo Thieves. The evil human uses Link to gain access to the Sacred Realm, where he places his tainted hands on Triforce and transforms the beautiful Hyrulean landscape into a barren wasteland. Link is determined to fix the problems he helped to create, so with the help of Rauru he travels through time gathering the powers of the Seven Sages.",
+      "rating": 99,
+      "year": "1998",
+      "genre": "Action Adventure, Fantasy",
+      "platform": "Nintendo 64",
+      "cover": "game/22cd3f69-01d0-41e0-ae10-36fdc182d57b-1650180199053.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Tony Hawk's Pro Skater 2",
+      "description": "As most major publishers' development efforts shift to any number of next-generation platforms, Tony Hawk 2 will likely stand as one of the last truly fantastic games to be released on the PlayStation.",
+      "rating": 98,
+      "year": "2000",
+      "genre": "Sports, Alternative, Skateboarding",
+      "platform": "Playstation",
+      "cover": "game/7b2efe74-d208-487a-b04b-9de890a2757c-1650180293150.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Grand Theft Auto IV",
+      "description": "[Metacritic's 2008 PS3 Game of the Year; Also known as \"GTA IV\"] What does the American Dream mean today? For Niko Belic, fresh off the boat from Europe. It's the hope he can escape his past. For his cousin, Roman, it is the vision that together they can find fortune in Liberty City, gateway to the land of opportunity. As they slip into debt and are dragged into a criminal underworld by a series of shysters, thieves and sociopaths, they discover that the reality is very different from the dream in a city that worships money and status, and is heaven for those who have them an a living nightmare for those who don't. [Rockstar Games]",
+      "rating": 98,
+      "year": "2008",
+      "genre": "Action Adventure, Modern, Modern, Open-World",
+      "platform": "PlayStation 3",
+      "cover": "game/d4969178-bbe0-49f1-9e58-de053357bf04-1650180348909.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "SoulCalibur",
+      "description": "This is a tale of souls and swords, transcending the world and all its history, told for all eternity... The greatest weapons-based fighter returns, this time on Sega Dreamcast. Soul Calibur unleashes incredible graphics, fantastic fighters, and combos so amazing they'll make your head spin!",
+      "rating": 98,
+      "year": "1999",
+      "genre": "Action, Fighting, 3D",
+      "platform": "Dreamcast",
+      "cover": "game/26c6efab-20c6-4d56-b1dd-5091f26b8145-1650180417754.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Grand Theft Auto IV",
+      "description": "[Metacritic's 2008 Xbox 360 Game of the Year; Also known as \"GTA IV\"] What does the American Dream mean today? For Niko Belic, fresh off the boat from Europe. It's the hope he can escape his past. For his cousin, Roman, it is the vision that together they can find fortune in Liberty City, gateway to the land of opportunity. As they slip into debt and are dragged into a criminal underworld by a series of shysters, thieves and sociopaths, they discover that the reality is very different from the dream in a city that worships money and status, and is heaven for those who have them an a living nightmare for those who don't. [Rockstar Games]",
+      "rating": 98,
+      "year": "2008",
+      "genre": "Action Adventure, Modern, Modern, Open-World",
+      "platform": "Xbox 360",
+      "cover": "game/13d1a320-4235-40f8-83b3-e68de2b5e9b1-1650180469008.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Super Mario Galaxy",
+      "description": "[Metacritic's 2007 Wii Game of the Year] The ultimate Nintendo hero is taking the ultimate step ... out into space. Join Mario as he ushers in a new era of video games, defying gravity across all the planets in the galaxy. When some creature escapes into space with Princess Peach, Mario gives chase, exploring bizarre planets all across the galaxy. Mario, Peach and enemies new and old are here. Players run, jump and battle enemies as they explore all the planets in the galaxy. Since this game makes full use of all the features of the Wii Remote, players have to do all kinds of things to succeed: pressing buttons, swinging the Wii Remote and the Nunchuk, and even pointing at and dragging things with the pointer. Since he's in space, Mario can perform mind-bending jumps unlike anything he's done before. He'll also have a wealth of new moves that are all based around tilting, pointing and shaking the Wii Remote. Shake, tilt and point! Mario takes advantage of all the unique aspects of the Wii Remote and Nunchuk controller, unleashing new moves as players shake the controller and even point at and drag items with the pointer. [Nintendo]",
+      "rating": 97,
+      "year": "2007",
+      "genre": "Action, Platformer, Platformer, 3D, 3D",
+      "platform": "Wii",
+      "cover": "game/ba972a4a-8df1-403b-8931-019ed757e6e8-1650180524508.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Super Mario Galaxy 2",
+      "description": "Super Mario Galaxy 2, the sequel to the galaxy-hopping original game, includes the gravity-defying, physics-based exploration from the first game, but is loaded with entirely new galaxies and features to challenge players. On some stages, Mario can pair up with his dinosaur buddy Yoshi and use his tongue to grab items and spit them back at enemies. Players can also have fun with new items such as a drill that lets our hero tunnel through solid rock. [Nintendo]",
+      "rating": 97,
+      "year": "2010",
+      "genre": "Action, Platformer, Platformer, 3D, 3D",
+      "platform": "Wii",
+      "cover": "game/2386b684-2ee7-4de0-bddc-9cbe29ca10da-1650180564496.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Red Dead Redemption 2",
+      "description": "Developed by the creators of Grand Theft Auto V and Red Dead Redemption, Red Dead Redemption 2 is an epic tale of life in America’s unforgiving heartland. The game’s vast and atmospheric world also provides the foundation for a brand new online multiplayer experience. America, 1899. The end of the Wild West era has begun. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang has to rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal fissures threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang that raised him. [Rockstar]",
+      "rating": 97,
+      "year": "2018",
+      "genre": "Action Adventure, Open-World",
+      "platform": "Xbox One",
+      "cover": "game/7dedbc99-f282-439f-ba70-13169d9bcd05-1650180610641.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Grand Theft Auto V",
+      "description": "Grand Theft Auto 5 melds storytelling and gameplay in unique ways as players repeatedly jump in and out of the lives of the game's three protagonists, playing all sides of the game's interwoven story.",
+      "rating": 97,
+      "year": "2014",
+      "genre": "Action Adventure, Modern, Open-World",
+      "platform": "Xbox One",
+      "cover": "game/e48ee175-27a5-4adb-80c2-0294f98478c0-1650180658883.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Grand Theft Auto V",
+      "description": "Grand Theft Auto 5 melds storytelling and gameplay in unique ways as players repeatedly jump in and out of the lives of the game's three protagonists, playing all sides of the game's interwoven story.",
+      "rating": 97,
+      "year": "2013",
+      "genre": "Action Adventure, Modern, Open-World",
+      "platform": "PlayStation 3",
+      "cover": "game/7ab4fd99-4329-4117-bd3f-445799dcfe81-1650180680957.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "Disco Elysium: The Final Cut",
+      "description": "Disco Elysium - The Final Cut is the definitive edition of the smash-hit RPG. Pursue your political dreams in new quests, meet and question more of the city's locals, and explore a whole extra area. Full voice-acting, controller support, and expanded language options also included. Get even more out of this award-winning open world. You're a detective with a unique skill system at your disposal and a whole city block to carve your path across. Interrogate unforgettable characters, crack murders, or take bribes. Become a hero or an absolute disaster of a human being.",
+      "rating": 97,
+      "year": "2021",
+      "genre": "Role-Playing, General, Western-Style",
+      "platform": "PC",
+      "cover": "game/1849d51e-9aff-4f31-9317-cf6128aa7dc0-1650180720564.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "Grand Theft Auto V",
+      "description": "Los Santos is a sprawling sun-soaked metropolis full of self-help gurus, starlets and once-important stars. The city was once the envy of the Western world, but is now struggling to stay relevant in an era of economic uncertainty and reality TV. Amidst the chaos, three very different criminals chart their own chances of survival and success: Franklin, a former street gangster, now looking for real opportunities and fat stacks of cash; Michael, a professional ex-con whose retirement is significantly less rosy than he hoped it would be; and Trevor, a violent maniac driven by the chance of a cheap high and the next big score. Rapidly running out of options, the crew risks everything in a series of bolt and dangerous heists that could set them up for the long haul",
+      "rating": 97,
+      "year": "2013",
+      "genre": "Modern, Action Adventure, Modern, Open-World",
+      "platform": "Xbox 360",
+      "cover": "game/c5020067-e3ef-4d75-b682-18c146d7b7b8-1650180779835.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "Tony Hawk's Pro Skater 2",
+      "description": "Hawk's back - with new technology, new pros and new tricks! THPS2, the legend rides on! Skate as legendary Tony Hawk or any one of 12 other pro skaters. Create your own custom skaters. Multiple play modes including 1-Player, Career and Free Skate modes, as well as 2-player modes such as Trick Attack, Graffiti Tag and Horse. Build your own custom skate parks with the real-time 3D park editor.",
+      "rating": 97,
+      "year": "2000",
+      "genre": "Sports, Alternative, Skateboarding",
+      "platform": "Dreamcast",
+      "cover": "game/c96efdb4-f693-4776-a403-7ef9bdad4deb-1650180819192.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "description": "Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across fields, through forests and to mountain peaks as you discover what has become of the ruined kingdom of Hyrule in this open-air adventure. Explore the wilds of Hyrule any way you like",
+      "rating": 97,
+      "year": "2017",
+      "genre": "Action Adventure, Open-World",
+      "platform": "Switch",
+      "cover": "game/7b87afa8-757c-45ea-8e67-00b6783cc1f1-1650180876527.jpeg"
+    },
+    {
+      "id": 15,
+      "name": "Tony Hawk's Pro Skater 3",
+      "description": " Challenge up to four friends in online competitions over a LAN or the Internet. Take them on in both Trick Attack and Graffiti modes. [Activision]",
+      "rating": 97,
+      "year": "2001",
+      "genre": "Sports, Alternative, Skateboarding",
+      "platform": "PlayStation 2",
+      "cover": "game/6d93c977-e9e0-4852-8b13-eaeebd0fea6e-1650180939759.jpeg"
+    },
+    {
+      "id": 16,
+      "name": "Perfect Dark",
+      "description": "Step into the Dark... As Carrington Institute's most promising new Agent, Joanna Dark must uncover the truth behind the dataDyne Corporation's recent technological breakthroughs - breakthroughs which could have serious consequences for mankind.",
+      "rating": 97,
+      "year": "2000",
+      "genre": "Action, Shooter, First-Person, Sci-Fi",
+      "platform": "Nintendo 64",
+      "cover": "game/35224477-cd63-435a-9b87-a4771de3723f-1650180977192.jpeg"
+    },
+    {
+      "id": 17,
+      "name": "Red Dead Redemption 2",
+      "description": "Developed by the creators of Grand Theft Auto V and Red Dead Redemption, Red Dead Redemption 2 is an epic tale of life in America’s unforgiving heartland. The game’s vast and atmospheric world also provides the foundation for a brand new online multiplayer experience. America, 1899. The end of the Wild West era has begun. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang has to rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal fissures threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang that raised him. [Rockstar]",
+      "rating": 97,
+      "year": "2018",
+      "genre": "Action Adventure, Open-World",
+      "platform": "PlayStation 4",
+      "cover": "game/0cedc1a7-d651-4a74-8e33-5036809da380-1650181013374.jpeg"
+    },
+    {
+      "id": 18,
+      "name": "Grand Theft Auto V",
+      "description": "The sprawling sun-soaked metropolis of Los Santos is chock full of self-help coaches, starlets and C-List celebrities, once on top of the media world, now struggling to stay relevant in time of economic malaise and lowest-common-denominator reality TV. Amidst this madness, three unique criminals plan their own chances of survival and success: Franklin, a street-level hustler in search of opportunities for serious money; Michael, an ex-con whose \"retirement\" is a less rosy than he hoped it would be; and Trevor, a violent dude driven by the chance for a quick high and the next big score. Nearly out of options, the crew risks it all in a series of daring and dangerous heists that could set them up for life - one way or the other.",
+      "rating": 97,
+      "year": "2014",
+      "genre": "Action Adventure, Modern, Open-World",
+      "platform": "PlayStation 4",
+      "cover": "game/3c8014f5-ddd2-41d8-af2f-430295acf8bd-1650181049269.jpeg"
+    },
+    {
+      "id": 19,
+      "name": "Metroid Prime",
+      "description": "Samus returns in a new mission to unravel the mystery behind the ruined walls scattered across Tallon IV. In Metroid Prime, you'll play the role of this bounty hunter and view the world through her visor, which displays information ranging from current energy levels to ammunition. Equipped with a Power Beam and Gravity Suit, you must shoot locked switches, solve puzzles, and eliminate enemies. It's up to you to explore the world and recover more power-ups and weapons, which gradually open more gameplay areas.",
+      "rating": 97,
+      "year": "2002",
+      "genre": "Action, Shooter, First-Person, Sci-Fi",
+      "platform": "GameCube",
+      "cover": "game/4a47cfff-878c-4704-a6e6-8cc9818ea3e1-1650181088960.jpeg"
+    },
+    {
+      "id": 20,
+      "name": "Grand Theft Auto III",
+      "description": "Players are put at the heart of their very own gangster movie, and let loose in a fully-realised 3 dimensional city with a cast of hundreds, 50 plus vehicles, ranging from sports cars to ice cream trucks and from boats to buses, 3 hours of music, including opera, reggae, house, drum and bass, pop and disco, and a huge array of street ready weapons. [Rockstar Games]",
+      "rating": 97,
+      "year": "2001",
+      "genre": "Action Adventure, Modern",
+      "platform": "PlayStation 2",
+      "cover": "game/80dc9d81-5b61-4b0a-baa8-0f2c32e0a6fd-1650181131252.jpeg"
+    }
+  ]
+  
