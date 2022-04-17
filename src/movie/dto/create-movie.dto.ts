@@ -14,4 +14,12 @@ export class CreateMovieDto {
     @IsNotEmpty({message: "Rating tidak boleh kosong"})
     @IsNumberString(null, {message: "Format rating salah"})
     rating: number;
+
+    @IsNotEmpty({message: "Tahun tidak boleh kosong"})
+    @IsNumberString(null, {message: "Format tahun salah"})
+    year: number;
+
+    @IsNotEmpty({message: "Genre tidak boleh kosong"})
+    @IsString({message: "Format genre salah"})
+    genre: string;
 }

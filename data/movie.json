@@ -1,1 +1,182 @@
-[]
+[
+    {
+      "id": 1,
+      "name": "The Shawshank Redemption",
+      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "rating": 93,
+      "year": "1994",
+      "genre": "Drama",
+      "cover": "movie/600475bc-e248-4128-adad-0ef26bce152f-1650177877837.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "The Godfather",
+      "description": "The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.",
+      "rating": 92,
+      "year": "1972",
+      "genre": "Drama, Crime",
+      "cover": "movie/0eb4deb4-f077-4199-add0-01de09708f8c-1650177915715.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "The Dark Knight",
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "rating": 90,
+      "year": "2008",
+      "genre": "Action, Drama, Crime",
+      "cover": "movie/d35ae4e7-2add-4d62-9d97-f8620fe029f0-1650177981033.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "The Godfather: Part II",
+      "description": "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
+      "rating": 90,
+      "year": "1974",
+      "genre": "Drama, Crime",
+      "cover": "movie/948fcebf-67d1-4599-922c-3d3f7f7c98b5-1650178024047.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "12 Angry Men",
+      "description": "The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.",
+      "rating": 90,
+      "year": "1957",
+      "genre": "Drama, Crime",
+      "cover": "movie/4868ce24-b1ba-4a47-9a73-8c49c246a57f-1650178059777.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Schindler's List",
+      "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+      "rating": 90,
+      "year": "1993",
+      "genre": "Biography, Drama, History",
+      "cover": "movie/51030c10-7a07-4bdc-961f-4f5ad15db032-1650178118322.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "The Lord of the Rings: The Return of the King",
+      "description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "rating": 90,
+      "year": "2003",
+      "genre": "Action, Adventure, Drama",
+      "cover": "movie/de72f792-1568-407f-9e76-27a618cc6535-1650178165572.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Pulp Fiction",
+      "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "rating": 89,
+      "year": "1994",
+      "genre": "Crime, Drama",
+      "cover": "movie/3be9d16d-1ee0-422b-bcc2-59f0a3e77564-1650178209310.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "The Lord of the Rings: The Fellowship of the Ring",
+      "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "rating": 88,
+      "year": "2001",
+      "genre": "Action, Adventure, Drama",
+      "cover": "movie/150b76e3-3caf-44f9-845d-3a25b045ecbd-1650178256674.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "The Good, the Bad and the Ugly",
+      "description": "A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
+      "rating": 88,
+      "year": "1966",
+      "genre": "Adventure, Western",
+      "cover": "movie/f7417165-97f2-4ca2-b452-f561dd3eafa2-1650178298931.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "Forrest Gump",
+      "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+      "rating": 88,
+      "year": "1994",
+      "genre": "Drama, Romance",
+      "cover": "movie/d50051ba-a0bc-4652-9df6-99a2ffcec2e2-1650178333214.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "Fight Club",
+      "description": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+      "rating": 88,
+      "year": "1999",
+      "genre": "Drama",
+      "cover": "movie/f0f00141-b4cb-4087-bf28-f67f12ad25c0-1650178844430.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "Inception",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+      "rating": 88,
+      "year": "2010",
+      "genre": "Action, Adventure, Sci-Fi",
+      "cover": "movie/90a78f60-033e-4ba2-bc49-ce501d03b632-1650178393993.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "The Lord of the Rings: The Two Towers",
+      "description": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+      "rating": 88,
+      "year": "2002",
+      "genre": "Action, Adventure, Drama",
+      "cover": "movie/50a5e2ec-a333-4f39-bd8c-51188cc7c8be-1650178883981.jpeg"
+    },
+    {
+      "id": 15,
+      "name": "Star Wars: Episode V - The Empire Strikes Back",
+      "description": "After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued across the galaxy by Darth Vader and bounty hunter Boba Fett.",
+      "rating": 87,
+      "year": "1980",
+      "genre": "Action, Adventure, Fantasy",
+      "cover": "movie/a89b39a5-4db0-4df7-9227-bf5d947f55d0-1650178433698.jpeg"
+    },
+    {
+      "id": 16,
+      "name": "The Matrix",
+      "description": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+      "rating": 87,
+      "year": "1999",
+      "genre": "Action, Sci-Fi",
+      "cover": "movie/dbf236b1-d621-49ff-b009-daf988d7ec0e-1650178472292.jpeg"
+    },
+    {
+      "id": 17,
+      "name": "Goodfellas",
+      "description": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+      "rating": 87,
+      "year": "1990",
+      "genre": "Biography, Crime, Drama",
+      "cover": "movie/c48a9f67-4ed6-43d7-87a4-7c614a81c7fb-1650178517780.jpeg"
+    },
+    {
+      "id": 18,
+      "name": "One Flew Over the Cuckoo's Nest",
+      "description": "A criminal pleads insanity and is admitted to a mental institution, where he rebels against the oppressive nurse and rallies up the scared patients.",
+      "rating": 87,
+      "year": "1975",
+      "genre": "Drama",
+      "cover": "movie/0509b99a-6001-4d44-b07a-afe7059734b7-1650178561502.jpeg"
+    },
+    {
+      "id": 19,
+      "name": "Se7en",
+      "description": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+      "rating": 86,
+      "year": "1995",
+      "genre": "Crime, Drama, Mystery",
+      "cover": "movie/bf2282fb-4538-4b7e-8b19-45dd0183d01a-1650178608099.jpeg"
+    },
+    {
+      "id": 20,
+      "name": "Seven Samurai",
+      "description": "A poor village under attack by bandits recruits seven unemployed samurai to help them defend themselves.",
+      "rating": 86,
+      "year": "1954",
+      "genre": "Action, Drama",
+      "cover": "movie/a64b27fd-f5c6-40db-b51d-19cfc66d1a22-1650178649043.jpeg"
+    }
+]

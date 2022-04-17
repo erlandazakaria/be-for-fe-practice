@@ -17,4 +17,14 @@ export class UpdateMovieDto {
     @IsNotEmpty({message: "Rating tidak boleh kosong"})
     @IsNumberString(null, {message: "Format rating salah"})
     rating?: number;
+
+    @IsOptional()
+    @IsNotEmpty({message: "Tahun tidak boleh kosong"})
+    @IsNumberString(null, {message: "Format tahun salah"})
+    year?: number;
+
+    @IsOptional()
+    @IsNotEmpty({message: "Genre tidak boleh kosong"})
+    @IsString({message: "Format genre salah"})
+    genre?: string;
 }
