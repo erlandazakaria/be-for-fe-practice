@@ -1,10 +1,12 @@
-import { readFileSync, writeFile } from "fs";
+import { readFileSync, writeFile, unlink, existsSync } from "fs";
 import { promisify } from "util";
 
 const write = promisify(writeFile);
+const unlinkFile = promisify(unlink);
 
 export default class Data {
     private dataPath: string;
+    private baseFilePath = "./public/";
 
     constructor(dataPath: string) {
         this.dataPath = `./data/${dataPath}.json`;
@@ -52,12 +54,17 @@ export default class Data {
         }
     };
 
-    public updateOne = async (id: number, req: any) => {
+    public updateOne = async (id: number, req: any, fileAttribute?: string) => {
         if(!this.dataPath) return false;
         const data = JSON.parse(readFileSync(this.dataPath).toString());
         if(!data) return false;
         try {
             const index = data.findIndex(d => d.id === id);
+            
+            // Delete file if will be updated
+            if(fileAttribute && index >= 0 && data[index] && data[index][fileAttribute] && existsSync(`${this.baseFilePath}${data[index][fileAttribute]}`)) {
+                await unlinkFile(`${this.baseFilePath}${data[index][fileAttribute]}`)
+            }
             data[index] = {...data[index], ...req };
             await write(this.dataPath, JSON.stringify(data));
             return true
@@ -66,14 +73,28 @@ export default class Data {
         }
     };
 
-    public deleteOne = async (id: number) => {
+    public deleteOne = async (id: number, fileAttribute?: string) => {
         if(!this.dataPath) return false;
         const data = JSON.parse(readFileSync(this.dataPath).toString());
         if(!data) return false;
         try {
-            const updatedData = data.filter(d => d.id !== id);
+            let updatedData = [];
+            let removedData = null;
+            data.forEach(d => {
+                if(d.id === id) {
+                    removedData = d;
+                } else {
+                   updatedData.push(d);
+                }
+            });
+
             await write(this.dataPath, JSON.stringify(updatedData));
-            return true
+
+            // Delete file if exist
+            if(fileAttribute && removedData && removedData[fileAttribute] && existsSync(`${this.baseFilePath}${removedData[fileAttribute]}`)) {
+                await unlinkFile(`${this.baseFilePath}${removedData[fileAttribute]}`)
+            }
+            return removedData !== null
         } catch (error) {
             return false
         }

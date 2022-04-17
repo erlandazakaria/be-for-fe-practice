@@ -3,11 +3,9 @@ import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { JwtModule } from '@nestjs/jwt';
 import { ConfigModule } from '@nestjs/config';
-import { MulterModule } from '@nestjs/platform-express';
 
-import { multerFilter, multerStorage } from './lib/multer.lib';
-import { UserModule } from './user/user.module';
 import { Auth } from './middlewares/auth.middleware';
+import { UserModule } from './user/user.module';
 import { UserService } from './user/user.service';
 import { UserController } from './user/user.controller';
 import { MovieModule } from './movie/movie.module';
@@ -20,7 +18,6 @@ import { GameModule } from './game/game.module';
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'),
     }),
-    MulterModule.register({storage: multerStorage, fileFilter: multerFilter}),
     JwtModule.register({
       secret: process.env.JWT_SECRET,
       signOptions: { expiresIn: '2h' },

@@ -1,6 +1,8 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Res, ValidationPipe } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Res, ValidationPipe, UseInterceptors, UploadedFile, HttpStatus } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
+import { FileInterceptor } from '@nestjs/platform-express';
 
+import ServiceResponse from '../lib/serviceResponse.lib';
 import { GameService } from './game.service';
 import { CreateGameDto } from './dto/create-game.dto';
 import { UpdateGameDto } from './dto/update-game.dto';
@@ -12,7 +14,12 @@ export class GameController {
   constructor(private readonly gameService: GameService) {}
 
   @Post()
-  async create(@Res() response, @Body() createGameDto: CreateGameDto) {
+  @UseInterceptors(FileInterceptor('cover'))
+  async create(@Res() response, @Body() createGameDto: CreateGameDto, @UploadedFile() cover: Express.Multer.File) {
+    if(!cover) return response.status(HttpStatus.BAD_REQUEST).json(new ServiceResponse().badRequest())
+
+    createGameDto.cover = cover.path.replace(/\\/g, "/").replace("public/", "");
+
     const result = await this.gameService.create(createGameDto);
     return response.status(result.code).json(result);
   }
@@ -30,7 +37,12 @@ export class GameController {
   }
 
   @Patch(':id')
-  async update(@Res() response, @Param(new ValidationPipe({transform: true})) params: FindGameDto, @Body() updateGameDto: UpdateGameDto) {
+  @UseInterceptors(FileInterceptor('cover'))
+  async update(@Res() response, @Param(new ValidationPipe({transform: true})) params: FindGameDto, @Body() updateGameDto: UpdateGameDto, @UploadedFile() cover: Express.Multer.File) {
+    if(cover) {
+      updateGameDto.cover =  cover.path.replace(/\\/g, "/").replace("public/", "");
+    }
+
     const result = await this.gameService.update(+params.id, updateGameDto);
     return response.status(result.code).json(result);
   }

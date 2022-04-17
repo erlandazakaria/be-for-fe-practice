@@ -9,8 +9,6 @@ export class CreateMovieDto {
     @IsString({message: "Format deskripsi salah"})
     description: string;
 
-    @IsNotEmpty({message: "Cover tidak boleh kosong"})
-    @IsString({message: "Format cover salah"})
     cover: string;
 
     @IsNotEmpty({message: "Rating tidak boleh kosong"})

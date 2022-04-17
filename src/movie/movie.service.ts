@@ -30,12 +30,12 @@ export class MovieService extends BaseService {
   }
 
   async update(id: number, updateMovieDto: UpdateMovieDto) {
-    const result = this.data.updateOne(+id, updateMovieDto);
+    const result = this.data.updateOne(+id, updateMovieDto, "cover");
     return result ? this.response.success() : this.response.badRequest();
   }
 
-  remove(id: number) {
-    const result = this.data.deleteOne(+id);
+  async remove(id: number) {
+    const result = await this.data.deleteOne(+id, "cover");
     return result ? this.response.success() : this.response.badRequest();
   }
 }

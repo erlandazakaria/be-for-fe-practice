@@ -29,12 +29,12 @@ export class GameService extends BaseService {
   }
 
   async update(id: number, updateGameDto: UpdateGameDto) {
-    const result = this.data.updateOne(+id, updateGameDto);
+    const result = this.data.updateOne(+id, updateGameDto, "cover");
     return result ? this.response.success() : this.response.badRequest();
   }
 
   remove(id: number) {
-    const result = this.data.deleteOne(+id);
+    const result = this.data.deleteOne(+id, "cover");
     return result ? this.response.success() : this.response.badRequest();
   }
 }
